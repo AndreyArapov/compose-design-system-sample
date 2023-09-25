@@ -16,3 +16,22 @@ interface Button {
         enabled: Boolean
     )
 }
+
+@Composable
+fun Button.Button(
+    title: String,
+    style: ButtonStyle,
+    modifier: Modifier = Modifier,
+    onClick: () -> Unit = {},
+    iconLeft: (@Composable () -> Unit)? = null,
+    enabled: Boolean = true
+) {
+    invoke(
+        title = title,
+        style = style,
+        onClick = onClick,
+        modifier = modifier,
+        iconLeft = iconLeft,
+        enabled = enabled
+    )
+}

@@ -13,3 +13,16 @@ interface PromoBlock {
         content: @Composable BoxScope.() -> Unit
     )
 }
+
+@Composable
+fun PromoBlock.PromoBlock(
+    style: PromoBlockStyle,
+    modifier: Modifier = Modifier,
+    content: @Composable BoxScope.() -> Unit
+) {
+    invoke(
+        style = style,
+        modifier = modifier,
+        content = content
+    )
+}

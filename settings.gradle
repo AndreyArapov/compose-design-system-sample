@@ -15,13 +15,16 @@ dependencyResolutionManagement {
 rootProject.name = "Design Systems"
 include ':app'
 
-include ':feature'
+include ':feature:impl'
+include ':feature:preview'
 
 include ':ds:core'
 
 include ':ds:component:button:public'
+include ':ds:component:button:preview'
 include ':ds:component:button:impl'
 include ':ds:component:promo_block:public'
+include ':ds:component:promo_block:preview'
 include ':ds:component:promo_block:impl'
 
 include ':ds:theme:alnf'

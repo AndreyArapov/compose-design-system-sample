@@ -52,7 +52,13 @@ dependencies {
     def composeBom = platform('androidx.compose:compose-bom:2023.01.00')
     implementation composeBom
 
-    implementation project(':feature')
+    implementation project(':ds:component:button:impl')
+    implementation project(':ds:component:promo_block:impl')
+    implementation project(':feature:impl')
+
+    debugImplementation project(':ds:component:button:preview')
+    debugImplementation project(':ds:component:promo_block:preview')
+    debugImplementation project(':feature:preview')
 
     implementation project(':di-core')
 
