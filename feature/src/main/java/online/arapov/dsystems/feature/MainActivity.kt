@@ -1,4 +1,4 @@
-package online.arapov.dsystems
+package online.arapov.dsystems.feature
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
