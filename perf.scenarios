@@ -1,0 +1,59 @@
+clean_build {
+    tasks = [":app:assembleDebug"]
+    cleanup-tasks = ["clean"]
+    clear-build-cache-before = SCENARIO
+}
+
+ds_core_abi_change {
+    tasks = [":app:assembleDebug"]
+    apply-abi-change-to = ["ds/core/src/main/java/online/arapov/dsystems/core/ThemeColor.kt"]
+    clear-build-cache-before = SCENARIO
+}
+
+ds_core_abi_change_composable {
+    tasks = [":app:assembleDebug"]
+    apply-kotlin-composable-change-to = ["ds/core/src/main/java/online/arapov/dsystems/core/DefaultTheme.kt"]
+    clear-build-cache-before = SCENARIO
+}
+
+ds_core_non_abi_change {
+    tasks = [":app:assembleDebug"]
+    apply-non-abi-change-to = ["ds/core/src/main/java/online/arapov/dsystems/core/ThemeColor.kt"]
+    clear-build-cache-before = SCENARIO
+}
+
+button_abi_change {
+    tasks = [":app:assembleDebug"]
+    apply-abi-change-to = ["ds/component/button/src/main/java/online/arapov/dsystems/component/button/ButtonStyle.kt"]
+    clear-build-cache-before = SCENARIO
+}
+
+button_abi_change_composable {
+    tasks = [":app:assembleDebug"]
+    apply-kotlin-composable-change-to = ["ds/component/button/src/main/java/online/arapov/dsystems/component/button/Button.kt"]
+    clear-build-cache-before = SCENARIO
+}
+
+button_non_abi_change {
+    tasks = [":app:assembleDebug"]
+    apply-non-abi-change-to = ["ds/component/button/src/main/java/online/arapov/dsystems/component/button/ButtonStyle.kt"]
+    clear-build-cache-before = SCENARIO
+}
+
+theme_abi_change {
+    tasks = [":app:assembleDebug"]
+    apply-abi-change-to = ["ds/theme/material/src/main/java/online/arapov/dsystems/theme/material/MaterialTheme.kt"]
+    clear-build-cache-before = SCENARIO
+}
+
+theme_abi_change_composable {
+    tasks = [":app:assembleDebug"]
+    apply-kotlin-composable-change-to = ["ds/theme/material/src/main/java/online/arapov/dsystems/theme/material/MaterialTheme.kt"]
+    clear-build-cache-before = SCENARIO
+}
+
+theme_non_abi_change {
+    tasks = [":app:assembleDebug"]
+    apply-non-abi-change-to = ["ds/theme/material/src/main/java/online/arapov/dsystems/theme/material/MaterialTheme.kt"]
+    clear-build-cache-before = SCENARIO
+}
