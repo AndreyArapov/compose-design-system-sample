@@ -1,0 +1,20 @@
+scenario,button_abi_change,button_abi_change_composable,button_impl_non_abi_change,button_public_non_abi_change,clean_build,ds_core_abi_change,ds_core_abi_change_composable,ds_core_non_abi_change,theme_abi_change,theme_abi_change_composable,theme_non_abi_change
+version,Gradle 7.4,Gradle 7.4,Gradle 7.4,Gradle 7.4,Gradle 7.4,Gradle 7.4,Gradle 7.4,Gradle 7.4,Gradle 7.4,Gradle 7.4,Gradle 7.4
+tasks,:app:assembleDebug,:app:assembleDebug,:app:assembleDebug,:app:assembleDebug,:app:assembleDebug,:app:assembleDebug,:app:assembleDebug,:app:assembleDebug,:app:assembleDebug,:app:assembleDebug,:app:assembleDebug
+value,total execution time,total execution time,total execution time,total execution time,total execution time,total execution time,total execution time,total execution time,total execution time,total execution time,total execution time
+warm-up build #1,35686.37,22869.84,22123.35,23222.89,29226.79,23240.50,17724.58,22975.35,19543.66,17602.96,18832.46
+warm-up build #2,4667.45,5291.73,5159.84,5176.34,14921.18,3891.70,3519.26,3508.68,2556.07,3187.03,3398.74
+warm-up build #3,4397.59,4853.35,4343.91,3912.90,12278.90,3675.49,2927.34,2880.81,2776.98,2934.30,2742.69
+warm-up build #4,4255.46,4162.13,3661.44,3792.11,11998.74,3555.43,3157.93,2734.88,2440.31,2592.28,2503.34
+warm-up build #5,3728.86,4203.59,3615.66,4004.58,11551.82,3046.65,3924.12,2382.15,2359.85,2326.70,2335.13
+warm-up build #6,3873.58,4178.09,3424.89,3358.62,11858.56,3170.33,2789.99,2339.19,2164.04,2082.11,2265.86
+measured build #1,3710.60,3848.52,3117.64,3466.36,11001.62,2542.17,2652.44,2302.08,2022.22,1928.73,2233.52
+measured build #2,3722.51,3470.11,3141.96,3092.32,14087.50,2360.09,2670.16,2182.17,1966.77,2117.52,2069.87
+measured build #3,3504.55,3789.07,3157.55,3398.27,11520.13,2207.40,2467.96,2046.92,1942.60,2081.48,1934.52
+measured build #4,3794.64,3491.82,3498.56,2903.11,11406.93,2085.53,2228.78,2039.82,1864.30,2033.44,2004.72
+measured build #5,3491.74,3249.31,2754.91,3110.57,10904.95,2014.37,2266.73,2061.95,1780.62,1964.83,2036.44
+measured build #6,3270.95,3230.65,2754.63,2782.07,10279.14,2047.29,2191.76,2054.48,1761.30,1916.00,2004.17
+measured build #7,3237.59,3544.67,2916.81,3030.13,9488.82,1971.98,2607.73,1997.32,1730.55,1811.98,1989.76
+measured build #8,3513.11,3355.29,2877.64,2844.48,9598.07,1963.39,2266.31,2059.38,1735.73,1761.30,2015.97
+measured build #9,3452.15,3179.85,2577.43,2856.74,9847.98,2065.92,2173.95,1939.88,1652.73,1877.70,1909.67
+measured build #10,3334.96,2970.31,2612.97,2771.64,13208.47,2197.65,2178.61,2009.09,1773.13,2048.79,1954.40
